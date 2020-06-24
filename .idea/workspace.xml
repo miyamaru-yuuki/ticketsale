@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4bc5fec4-1e8c-41de-ad86-de7e8bf173f6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ticket_class.php" beforeDir="false" afterPath="$PROJECT_DIR$/ticket_class.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,7 +15,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
+            <state relative-caret-position="15">
               <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
             </state>
           </provider>
@@ -43,8 +42,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ticket_class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="559">
-              <caret line="82" column="26" selection-start-line="82" selection-start-column="26" selection-end-line="82" selection-end-column="26" />
+            <state relative-caret-position="222">
+              <caret line="57" column="9" lean-forward="true" selection-start-line="57" selection-start-column="9" selection-end-line="57" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -157,18 +156,18 @@
       <workItem from="1592972201350" duration="884000" />
       <workItem from="1592973303173" duration="88000" />
       <workItem from="1592973421430" duration="1192000" />
-      <workItem from="1592976245171" duration="197000" />
+      <workItem from="1592976245171" duration="1373000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14460000" />
+    <option name="totallyTimeSpent" value="15636000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="834" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20243205" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19098713" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -205,15 +204,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
+        <state relative-caret-position="15">
           <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kakunin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="19" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
         </state>
       </provider>
     </entry>
@@ -224,10 +216,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/kakunin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="19" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/ticket_class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="559">
-          <caret line="82" column="26" selection-start-line="82" selection-start-column="26" selection-end-line="82" selection-end-column="26" />
+        <state relative-caret-position="222">
+          <caret line="57" column="9" lean-forward="true" selection-start-line="57" selection-start-column="9" selection-end-line="57" selection-end-column="9" />
         </state>
       </provider>
     </entry>
