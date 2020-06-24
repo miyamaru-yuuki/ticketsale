@@ -1,8 +1,5 @@
 <?php
 require_once ('function.php');
-require_once ('tickettable_class.php');
-$tickettable = new ticketTable(db());
-$seatType = $tickettable->getTicketAll();
 ?>
 <!DOCTYPE html>
 <html>
@@ -30,16 +27,15 @@ if(isset($_GET['error']) && $_GET['error'] == 1){
             <form method="POST" action="kakunin.php">
                 <div>席種:
                     <select name="seatId">
-                        <?php
-                        foreach ($seatType as $data){
-                            echo '<option value="' .$data->getSeatId(). '">' .$data->getSeatType(). '</option>';
-                        }
-                        ?>
+                        <option value="1">S席</option>
+                        <option value="2">A席</option>
+                        <option value="3">B席</option>
+                        <option value="4">C席</option>
                     </select>
                 </div>
                 <div>
-                    <input type="radio" name="generalstudent" value="0">一般
-                    <input type="radio" name="generalstudent" value="1">小中高
+                    <input type="radio" name="generalstudent" value="1">一般
+                    <input type="radio" name="generalstudent" value="2">小中高
                 </div>
                 <div>枚数:<input type="number" name="number"></div>
                 <div><input type="submit" value="購入"></div>

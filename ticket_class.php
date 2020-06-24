@@ -3,16 +3,13 @@ class Ticket
 {
     // プロパティの宣言
     private $seatId;
-    private $seatType;
-    private $general;
-    private $student;
+    private $generalstudent;
 
-    public function __construct($seatId,$seatType,$general,$student)
+    public function __construct($seatId,$generalstudent,$paymentId)
     {
         $this->seatId = $seatId;
-        $this->seatType = $seatType;
-        $this->general = $general;
-        $this->student = $student;
+        $this->generalstudent = $generalstudent;
+        $this->paymentId = $paymentId;
     }
 
     public function getSeatId()
@@ -20,18 +17,67 @@ class Ticket
         return $this->seatId;
     }
 
-    public function getSeatType()
+    public function getGeneralStudent()
     {
-        return $this->seatType;
+        return $this->generalstudent;
     }
 
-    public function getGeneral()
+    public function getPaymentId()
     {
-        return $this->general;
+        return $this->paymentId;
     }
 
-    public function getStudent()
-    {
-        return $this->student;
+    public function getSeatName(){
+        $seatName = "";
+        if($this->seatId == 1){
+            $seatName = "S";
+        }elseif($this->seatId == 2){
+            $seatName = "A";
+        }elseif($this->seatId == 3){
+            $seatName = "B";
+        }elseif($this->seatId == 4){
+            $seatName = "C";
+        }
+        return $seatName;
+    }
+
+    public function getTanka(){
+        $tanka = 0;
+        if($this->seatId == 1){
+            if($this->generalstudent == 1){
+                $tanka = 2500;
+            }elseif($this->generalstudent == 2) {
+                $tanka = 1250;
+            }
+        }elseif($this->seatId == 2){
+            if($this->generalstudent == 1){
+                $tanka = 1800;
+            }elseif($this->generalstudent == 2) {
+                $tanka = 900;
+            }
+        }elseif($this->seatId == 3){
+            if($this->generalstudent == 1){
+                $tanka = 1500;
+            }elseif($this->generalstudent == 2) {
+                $tanka = 750;
+            }
+        }elseif($this->seatId == 4){
+            if($this->generalstudent == 1){
+                $tanka = 1000;
+            }elseif($this->generalstudent == 2) {
+                $tanka = 500;
+            }
+        }
+        return $tanka;
+    }
+
+    public function getPayment(){
+        $payment = "";
+        if($this->paymentId == 1){
+            $payment = "カード";
+        }elseif($this->paymentId == 2){
+            $payment = "銀行";
+        }
+        return $payment;
     }
 }
