@@ -16,6 +16,8 @@ require_once ('function.php');
 //エラー処理
 if(isset($_GET['error']) && $_GET['error'] == 1){
     echo '<p>指定した画面を表示できませんでした。</p>';
+}elseif(isset($_GET['error']) && $_GET['error'] == 2){
+    echo '<p>枚数が入力されていません。</p>';
 }
 ?>
 <div id="wrapper">
@@ -34,7 +36,7 @@ if(isset($_GET['error']) && $_GET['error'] == 1){
                     </select>
                 </div>
                 <div>
-                    <input type="radio" name="generalstudent" value="1">一般
+                    <input type="radio" name="generalstudent" value="1" checked>一般
                     <input type="radio" name="generalstudent" value="2">小中高
                 </div>
                 <div>枚数:<input type="number" name="number"></div>
