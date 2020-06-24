@@ -47,17 +47,22 @@ class Ticket
         $tanka = 0;
         $seatId = $this->seatId;
         $generalstudent = $this->generalstudent;
-        if($seatId == 1){
+        if($seatId == 1 && $generalstudent== 1) {
             $tanka = 2500;
-        }elseif($seatId == 2){
+        }elseif($seatId == 1 && $generalstudent== 2) {
+            $tanka = 1250;
+        }elseif($seatId == 2 && $generalstudent== 1) {
             $tanka = 1800;
-        }elseif($seatId == 3){
+        }elseif($seatId == 2 && $generalstudent== 2) {
+            $tanka = 900;
+        }elseif($seatId == 3 && $generalstudent== 1) {
             $tanka = 1500;
-        }elseif($seatId == 4){
+        }elseif($seatId == 3 && $generalstudent== 2) {
+            $tanka = 750;
+        }elseif($seatId == 4 && $generalstudent== 1) {
             $tanka = 1000;
-        }
-        if($generalstudent == 2){
-            $tanka = $tanka/2;
+        }elseif($seatId == 4 && $generalstudent== 2) {
+            $tanka = 500;
         }
         return $tanka;
     }
