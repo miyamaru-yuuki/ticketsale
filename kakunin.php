@@ -44,8 +44,8 @@ $kingaku = $tanka * $number;
             <form method="POST" action="kanryou.php">
                 <div>支払い方法:
                     <select name="paymentId">
-                        <option value="1">カード</option>
-                        <option value="2">銀行</option>
+                        <option value="0">カード</option>
+                        <option value="1">銀行</option>
                     </select>
                     <div><input type="hidden" name="kingaku" value="<?php echo $kingaku; ?>"></div>
                     <input type="submit" value="購入">

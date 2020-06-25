@@ -29,10 +29,10 @@ if(isset($_GET['error']) && $_GET['error'] == 1){
             <form method="POST" action="kakunin.php">
                 <div>席種:
                     <select name="seatId">
-                        <option value="1">S席</option>
-                        <option value="2">A席</option>
-                        <option value="3">B席</option>
-                        <option value="4">C席</option>
+                        <option value="0">S席</option>
+                        <option value="1">A席</option>
+                        <option value="2">B席</option>
+                        <option value="3">C席</option>
                     </select>
                 </div>
                 <div>

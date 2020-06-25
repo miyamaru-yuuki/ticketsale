@@ -37,8 +37,8 @@ class Ticket
 
     public function getTanka(){
         $tanka = 0;
-        $tankageneral = array(null,2500,1800,1500,1000);
-        $tankastudent = array(null,1250,900,750,500);
+        $tankageneral = array(2500,1800,1500,1000);
+        $tankastudent = array(1250,900,750,500);
         $seatId = $this->seatId;
         $generalstudent = $this->generalstudent;
         if($generalstudent== 1) {
@@ -51,7 +51,7 @@ class Ticket
 
     public function getPayment(){
         $paymentId = $this->paymentId;
-        $paymentAry = array(null,"カード","銀行");
+        $paymentAry = array("カード","銀行");
         $payment = $paymentAry[$paymentId];
         return $payment;
     }
