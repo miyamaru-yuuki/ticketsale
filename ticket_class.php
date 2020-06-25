@@ -45,24 +45,14 @@ class Ticket
 
     public function getTanka(){
         $tanka = 0;
+        $tankageneral = array(null,2500,1800,1500,1000);
+        $tankastudent = array(null,1250,900,750,500);
         $seatId = $this->seatId;
         $generalstudent = $this->generalstudent;
-        if($seatId == 1 && $generalstudent== 1) {
-            $tanka = 2500;
-        }elseif($seatId == 1 && $generalstudent== 2) {
-            $tanka = 1250;
-        }elseif($seatId == 2 && $generalstudent== 1) {
-            $tanka = 1800;
-        }elseif($seatId == 2 && $generalstudent== 2) {
-            $tanka = 900;
-        }elseif($seatId == 3 && $generalstudent== 1) {
-            $tanka = 1500;
-        }elseif($seatId == 3 && $generalstudent== 2) {
-            $tanka = 750;
-        }elseif($seatId == 4 && $generalstudent== 1) {
-            $tanka = 1000;
-        }elseif($seatId == 4 && $generalstudent== 2) {
-            $tanka = 500;
+        if($generalstudent== 1) {
+            $tanka = $tankageneral[$seatId];
+        }elseif($generalstudent== 2) {
+            $tanka = $tankastudent[$seatId];;
         }
         return $tanka;
     }
