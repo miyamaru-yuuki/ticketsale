@@ -29,17 +29,9 @@ class Ticket
     }
 
     public function getSeatName(){
-        $seatName = "";
+        $seatNameAry = array(null,"S","A","B","C");
         $seatId = $this->seatId;
-        if($seatId == 1){
-            $seatName = "S";
-        }elseif($seatId == 2){
-            $seatName = "A";
-        }elseif($seatId== 3){
-            $seatName = "B";
-        }elseif($seatId == 4){
-            $seatName = "C";
-        }
+        $seatName = $seatNameAry[$seatId];
         return $seatName;
     }
 
@@ -58,13 +50,9 @@ class Ticket
     }
 
     public function getPayment(){
-        $payment = "";
         $paymentId = $this->paymentId;
-        if($paymentId == 1){
-            $payment = "カード";
-        }elseif($paymentId == 2){
-            $payment = "銀行";
-        }
+        $paymentAry = array(null,"カード","銀行");
+        $payment = $paymentAry[$paymentId];
         return $payment;
     }
 }
