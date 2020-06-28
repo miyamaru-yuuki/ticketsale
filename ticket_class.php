@@ -29,7 +29,7 @@ class Ticket
     }
 
     public function getSeatName(){
-        $seatNameAry = array(null,"S","A","B","C");
+        $seatNameAry = array("S","A","B","C");
         $seatId = $this->seatId;
         $seatName = $seatNameAry[$seatId];
         return $seatName;
