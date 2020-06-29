@@ -18,6 +18,8 @@ if(isset($_GET['error']) && $_GET['error'] == 1){
     echo '<p>指定した画面を表示できませんでした。</p>';
 }elseif(isset($_GET['error']) && $_GET['error'] == 2){
     echo '<p>枚数が入力されていません。</p>';
+}elseif(isset($_GET['error']) && $_GET['error'] == 3){
+    echo '<p>枚数が0です。</p>';
 }
 ?>
 <div id="wrapper">

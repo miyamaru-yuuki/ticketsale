@@ -8,10 +8,11 @@ if(!isset($_POST['seatId'],$_POST['generalstudent'],$_POST['number'])){
 $seatId = $_POST['seatId'];
 $generalstudent = $_POST['generalstudent'];
 $number = $_POST['number'];
-
-$karahantei = str_replace(array(" ", "　"), "", $number);
-if(empty($karahantei)){
+if($number == null){
     header("Location: http://mmr.e5.valueserver.jp/ticketsale/index.php?error=2");
+    exit();
+}elseif($number == 0){
+    header("Location: http://mmr.e5.valueserver.jp/ticketsale/index.php?error=3");
     exit();
 }
 $ticket = new Ticket($seatId,$generalstudent,null);
