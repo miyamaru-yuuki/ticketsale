@@ -8,7 +8,7 @@ if(!isset($_POST['seatId'],$_POST['generalstudent'],$_POST['number'])){
 $seatId = $_POST['seatId'];
 $generalstudent = $_POST['generalstudent'];
 $number = $_POST['number'];
-if($number == null){
+if($number == ""){
     header("Location: http://mmr.e5.valueserver.jp/ticketsale/index.php?error=2");
     exit();
 }elseif($number <= 0){
