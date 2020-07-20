@@ -11,7 +11,7 @@ $number = $_POST['number'];
 if($number == null){
     header("Location: http://mmr.e5.valueserver.jp/ticketsale/index.php?error=2");
     exit();
-}elseif($number == 0){
+}elseif($number <= 0){
     header("Location: http://mmr.e5.valueserver.jp/ticketsale/index.php?error=3");
     exit();
 }

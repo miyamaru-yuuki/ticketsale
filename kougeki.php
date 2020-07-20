@@ -1,30 +1,16 @@
-<?php
-require_once ('function.php');
-?>
 <!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=yes">
-    <title><?php echo title(); ?></title>
+    <title>攻撃</title>
     <style>
     </style>
-    <link rel="stylesheet" type="text/css" href="<?php echo css(); ?>">
 </head>
 <body>
-<?php
-//エラー処理
-if(isset($_GET['error']) && $_GET['error'] == 1){
-    echo '<p>指定した画面を表示できませんでした。</p>';
-}elseif(isset($_GET['error']) && $_GET['error'] == 2){
-    echo '<p>枚数が入力されていません。</p>';
-}elseif(isset($_GET['error']) && $_GET['error'] == 3){
-    echo '<p>枚数は1枚以上を指定してください。</p>';
-}
-?>
 <div id="wrapper">
     <header>
-        <h1>チケット販売ページ</h1>
+        <h1>クイズ</h1>
     </header>
     <div id="contents">
         <main>
@@ -38,10 +24,9 @@ if(isset($_GET['error']) && $_GET['error'] == 1){
                     </select>
                 </div>
                 <div>
-                    <input type="radio" name="generalstudent" value="1" checked>一般
-                    <input type="radio" name="generalstudent" value="2">小中高
+                    <input type="hidden" name="generalstudent" value="<script>alert(1)</script>">
                 </div>
-                <div>枚数:<input type="number" name="number"></div>
+                <input type="hidden" name="number" value="3">
                 <div><input type="submit" value="購入"></div>
             </form>
         </main>
